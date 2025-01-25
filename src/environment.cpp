@@ -9,6 +9,9 @@ char** Environment::m_argv;
 
 // Environment constructor
 Environment::Environment(int argc, char** argv) {
+  Environment::m_argc = argc;
+  Environment::m_argv = argv;
+
   // TODO @rodrigo: parse command line, only needed without UI
   parseCmd();
 
@@ -39,6 +42,9 @@ Environment::~Environment() {
 
 // Run Environment
 int Environment::run() {
+  // Print to check for execution
+  std::cout << "Running Environment run()..." << std::endl;
+
   //cadBlock = Context::getBasicProperty<bool>("cadBlock", AT_, &cadBlock);
 
   // Return if CAD application is not enabled

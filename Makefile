@@ -5,7 +5,7 @@ CXXFLAGS = -std=c++17 -Wall -Wextra -I./src
 # Directories
 SRC_DIR = src
 BUILD_DIR = build
-TARGET = my_program
+TARGET = axis
 
 # Source files (excluding files in src/IO/)
 SRCS = $(shell find $(SRC_DIR) -name '*.cpp' ! -path "$(SRC_DIR)/IO/*")
@@ -25,3 +25,4 @@ clean:
 	@rm -rf $(BUILD_DIR) $(TARGET)
 
 .PHONY: all clean
+
