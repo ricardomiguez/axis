@@ -2,10 +2,12 @@
 #define APPLICATION_H
 
 #include <memory>
+
+#include "block.h"
 // TODO @rodrigo: implement a grid class later on the road
 //class Grid;
 
-class Geometry;
+//class Geometry;
 class Block;
 
 class Application {
