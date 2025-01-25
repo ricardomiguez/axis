@@ -1,8 +1,12 @@
 #include <iostream>
 
-int main() {
+int main(int argc, char* argv[]) {
+  // Create AXIS instance
+  // AXIS axis(argc, argv);
 
-  std::cout << "Running program..." std::endl;
+  // Print program execution
+  std::cout << "Running program..." << std::endl;
 
+  // Return code
   return 0;
 }
